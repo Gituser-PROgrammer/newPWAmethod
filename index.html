@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OPFS PWA Demo</title>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <style>
+      @font-face {
+        font-family: "CustomFont";
+        src: url("font.ttf");
+      }
+      body {
+        margin: 2rem;
+        background: #121212;
+        color: #eee;
+        text-align: center;
+        font-family: "CustomFont", sans-serif;
+      }
+      button {
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background: royalblue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      img#logo {
+        margin-top: 2rem;
+        width: 250px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 10px royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>OPFS PWA Demo</h1>
+
+    <button id="saveBtn">Save Files for Offline Use</button>
+
+    <img id="logo" alt="Offline Stored Image" />
+
+    <script src="app.js"></script>
+  </body>
+</html>
